@@ -1,6 +1,6 @@
 import styles from './styles.module.css'
 
-const ImageBanner = ({image}) => {
+const Image = ({image}) => {
     return (
         <div className={styles.wrapper}>
             {image ? <img src={image} alt='news' className={styles.image}/> : null}
@@ -8,4 +8,4 @@ const ImageBanner = ({image}) => {
     );
 }
 
-export default ImageBanner
+export default Image
