@@ -3,9 +3,10 @@ import NewsByFilter from "../../components/NewsByFilter/NewsByFilter";
 
 import styles from "./styles.module.css";
 
+
+
+
 const Main = () => {
-
-
 
   return (
     <main className={styles.main}>
