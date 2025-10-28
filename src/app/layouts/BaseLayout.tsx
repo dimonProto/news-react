@@ -1,7 +1,7 @@
 
 import { useTheme } from "@/app/providers/ThemeProvider";
-import { Main } from "@/pages/main";
 import { Header } from "@/widgets/header";
+import { Outlet } from "react-router-dom";
 
 function BaseLayout() {
   const {isDark} = useTheme()
@@ -11,7 +11,7 @@ function BaseLayout() {
       <div className={`app ${isDark ? "dark" : "light"}`}>
         <Header/>
         <div className="container">
-          <Main/>
+          <Outlet/>
         </div>
       </div>
  
